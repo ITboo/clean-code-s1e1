@@ -158,15 +158,15 @@
 }
 
 /* Edit Task */
-.list .list__item .input[type=text] {
+.task-list__input {
   display: none;
 }
 
-.list .list__item .edit-mode .input[type=text] {
+.task-list__input_edit {
   display: inline-block;
   width: 224px;
 }
 
-.list .list__item .edit-mode .label {
+.task-list__label_edit {
   display: none;
 }

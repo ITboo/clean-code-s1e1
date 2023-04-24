@@ -20,38 +20,38 @@
       <label class="label" for="new-task">Add Item</label>
     <div class="wrapper">
       <input id="new-task" class="task-input input" type="text">
-      <button class="button">Add</button>
+      <button class="add__btn button">Add</button>
     </div>
   </div>
     <h3 class="heading">Todo</h3>
     <ul class="todo-list list" id="todo">
-      <li class="list__item">
-        <input class="input" type="checkbox">
+      <li class="list__item list__item-put">
+        <input class="input input-checkbox" type="checkbox">
         <label class="task label">Pay Bills</label>
-        <input class="task-input input" type="text" >
+        <input class="task-input task-list__input input" type="text" >
         <button class="edit__btn button">Edit</button>
-        <button class="delete__btn button"><img class="btn__img" src="./remove.svg" alt="button"></button>
+        <button class="delete__btn button"><img class="btn__img delete-btn__img" src="./remove.svg" alt="button"></button>
       </li>
-      <li class="edit-mode list__item">
-        <input class="input" type="checkbox">
-        <label class="task label">Go Shopping</label>
-        <input class="task-input input" type="text" value="Go Shopping">
+      <li class="list__item list__item-edit">
+        <input class="input input-checkbox input__edit" type="checkbox">
+        <label class="task label task__edit task-list__label_edit">Go Shopping</label>
+        <input class="task-input task-list__input input task-list__input_edit" type="text" value="Go Shopping">
         <button class="edit__btn button">Save</button>
-        <button class="delete__btn button"><img class="btn__img" src="./remove.svg" alt="button"></button>
+        <button class="delete__btn button"><img class="btn__img delete-btn__img" src="./remove.svg" alt="button"></button>
       </li>
     </ul>
     <h3 class="heading">Completed</h3>
     <ul class="completed-list list" id="completed">
       <li class="list__item">
-        <input class="input" type="checkbox" checked>
+        <input class="input input-checkbox" type="checkbox" checked>
         <label class="task label">See the Doctor</label>
         <input class="task-input input" type="text">
         <button class="edit__btn button">Edit</button>
-        <button class="delete__btn button"><img class="btn__img" src="./remove.svg" alt="button"></button>
+        <button class="delete__btn button"><img class="btn__img delete-btn__img" src="./remove.svg" alt="button"></button>
       </li>
     </ul>
   </main>
-  <script src="app.js"></script>
+  <script defer src="app.js"></script>
 </body>
 
 </html>
